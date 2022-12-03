@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 4300,
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "name": "Tablette",
+      "price": 750,
+      "quantity": 37
+    },
+    {
+      "id": 3,
+      "name": "Print Ultra Laser",
+      "price": 1350,
+      "quantity": 50
+    },
+    {
+      "id": 4,
+      "name": "Smart phone",
+      "price": 2300,
+      "quantity": 50
+    },
+    {
+      "id": 7,
+      "name": "New product",
+      "price": 5.8,
+      "quantity": 5
+    },
+    {
+      "id": 8,
+      "name": "Apple Watch",
+      "price": 5500,
+      "quantity": 12
+    },
+    {
+      "id": 9,
+      "name": "WXDED",
+      "price": 9,
+      "quantity": 22
+    },
+    {
+      "id": 10,
+      "name": "prod3",
+      "price": 5,
+      "quantity": 7
+    },
+    {
+      "id": 11,
+      "name": "prod 4",
+      "price": 42,
+      "quantity": 7
+    },
+    {
+      "name": "Lunette soleil",
+      "price": 250,
+      "quantity": 7,
+      "id": 12
+    }
+  ]
+}

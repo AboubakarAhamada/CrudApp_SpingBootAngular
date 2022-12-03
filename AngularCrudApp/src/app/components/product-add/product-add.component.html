@@ -1,0 +1,43 @@
+<div class="container" *ngIf="productFormGroup">
+  <br>
+<form [formGroup]="productFormGroup">
+  <div class="mb-3">
+    <label class="form-label">Product name</label>
+    <input type="text" class="form-control" formControlName="name" placeholder="Product name"
+     [ngClass]="{'is-invalid': submitted && productFormGroup.controls.name.errors}">
+    <span class = "error-message" *ngIf="submitted && productFormGroup.controls.name.errors?.required">
+      {{fieldRequiredMessage}}
+    </span>
+    <span class = "error-message" *ngIf="submitted && (productFormGroup.controls.name.errors?.minlength ||
+    productFormGroup.controls.name.errors?.maxlength)">
+      {{productNameErrorMessage}}
+    </span>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Price</label>
+    <input type="number" class="form-control" formControlName="price"
+     [ngClass]="{'is-invalid': submitted && productFormGroup.controls.price.errors}">
+     <span class = "error-message" *ngIf="submitted && productFormGroup.controls.price.errors?.required">
+      {{fieldRequiredMessage}}
+    </span>
+     <span class = "error-message" *ngIf="submitted && productFormGroup.controls.price.errors?.min">
+      {{priceErrorMessage}}
+    </span>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Quantity</label>
+    <input type="number" pattern='[0-9]+' class="form-control" formControlName="quantity"
+    [ngClass]="{'is-invalid': submitted && productFormGroup.controls.quantity.errors}">
+    <span class = "error-message" *ngIf="submitted && productFormGroup.controls.quantity.errors?.required">
+      {{fieldRequiredMessage}}
+    </span>
+     <span class = "error-message" *ngIf="submitted && (productFormGroup.controls.quantity.errors?.min ||
+     productFormGroup.controls.quantity.errors?.pattern)">
+      {{quantityErrorMessage}}
+    </span>
+  </div>
+  <button type="submit" class="btn btn-success" (click)="onSaveProduct()">Save</button>
+  <button type="submit" routerLink="/products" class="btn btn-outline-info">Cancel</button>
+</form>
+</div>
+
