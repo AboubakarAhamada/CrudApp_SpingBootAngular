@@ -1,5 +1,6 @@
-nav {
-  height: 50px;
+.action{
+  margin-left:auto;
+  display:flex;
 }
 table {
   margin-top: 20px;
@@ -7,3 +8,4 @@ table {
 button {
   margin: 3px;
 }
+
