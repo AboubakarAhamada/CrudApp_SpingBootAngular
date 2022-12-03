@@ -20,7 +20,7 @@ export class ProductService {
   }
 
   searchProducts(keyword:string): Observable<IProduct[]>{
-    return this.http.get<IProduct[]>(this.host+"/products?name_like="+keyword);
+    return this.http.get<IProduct[]>(this.host+"/products/search?query="+keyword);
   }
 
   saveProduct(product: IProduct): Observable<IProduct> {

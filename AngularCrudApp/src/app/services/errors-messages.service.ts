@@ -7,7 +7,7 @@ export class ErrorsMessagesService {
 
   private fieldRequiredMessage: String = "This field can't be empty.";
   private productNameErrorMessage : String = "Product name must have between 3 and 50 characters.";
-  private priceErrorMessage : String = "You cant't set price less than 5 DH."
+  private priceErrorMessage : String = "You cant't set price less than 5€."
   private quantitErrorMessage : String = "Quantity must be positive integer"
 
   constructor() { }

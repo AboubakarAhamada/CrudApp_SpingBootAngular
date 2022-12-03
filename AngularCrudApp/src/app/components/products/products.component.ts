@@ -23,7 +23,7 @@ export class ProductsComponent implements OnInit {
   }
 
   onSearchProducts(dataForm:any){ // les données du formulaire
-    //this.products$ = this.productService.searchProducts(dataForm.keyword);
+    this.products$ = this.productService.searchProducts(dataForm.keyword);
   }
 
   onDeleteProduct(product: IProduct){

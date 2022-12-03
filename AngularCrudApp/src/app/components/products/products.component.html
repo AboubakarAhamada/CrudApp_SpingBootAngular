@@ -1,12 +1,14 @@
 <div class="nav ml-auto bg-light">
 <div class="action">
 <button (click)="onAddProduct()" class="btn btn-outline-info btn-sm">+ Add Product</button>
+
 <form #f="ngForm" (ngSubmit)="onSearchProducts(f.value)">
   <div class="form-group">
     <input type="text" ngModel name="keyword" placeholder="Enter product name">
     <button class="btn btn-outline-success btn-sm"><span class="fa fa-search"></span></button>
   </div>
 </form>
+
 </div>
 </div>
 <table class="table container">
