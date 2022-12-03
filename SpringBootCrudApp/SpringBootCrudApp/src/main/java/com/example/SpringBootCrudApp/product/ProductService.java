@@ -46,4 +46,8 @@ public class ProductService {
 
         productRepository.save(optionalProduct.get());
     }
+
+    List<Product> searchProductByName(String str){
+        return productRepository.findByNameContains(str);
+    }
 }

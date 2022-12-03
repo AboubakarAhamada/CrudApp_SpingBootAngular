@@ -41,4 +41,9 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 
+    @GetMapping(path = "/products/search")
+    List<Product> searchProductByName(@RequestParam("query") String str){
+        return  productService.searchProductByName(str);
+    }
+
 }
